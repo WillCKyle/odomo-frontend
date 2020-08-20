@@ -16,13 +16,13 @@ import HomePage from './pages/mainPages/HomePage';
 import ConnectPage from './pages/mainPages/ConnectPage';
 import ConsensusPage from './pages/mainPages/ConsensusPage';
 import ActionPage from './pages/mainPages/ActionPage';
-import ArtPage from './pages/mainPages/ArtPage';
+import LibraryPage from './pages/mainPages/LibraryPage';
 
 import ActionSearch from './pages/actionPages/ActionSearch';
 import MyActions from './pages/actionPages/MyActions';
 
-import ArtSearch from './pages/artPages/ArtSearch';
-import MyArt from './pages/artPages/MyArt';
+import LibrarySearch from './pages/libraryPages/LibrarySearch';
+import MyLibrary from './pages/libraryPages/MyLibrary';
 
 import ConnectSearch from './pages/connectPages/ConnectSearch';
 import ConnectInbox from './pages/connectPages/ConnectInbox';
@@ -55,7 +55,7 @@ class App extends Component {
           <Route path="/connect" component={ConnectPage} exact />
           <Route path="/consensus" component={ConsensusPage} exact />
           <Route path="/action" component={ActionPage} exact />
-          <Route path="/art" component={ArtPage} exact />
+          <Route path="/library" component={LibraryPage} exact />
 
           <Route path="/home/search" component={ExplorePage} exact />
           <Route path="/home/menu" component={MenuPage} exact />
@@ -69,8 +69,8 @@ class App extends Component {
           <Route path="/action/search" component={ActionSearch} exact />
           <Route path="/action/my-actions" component={MyActions} exact />
 
-          <Route path="/art/search" component={ArtSearch} exact />
-          <Route path="/art/my-art" component={MyArt} exact />
+          <Route path="/library/search" component={LibrarySearch} exact />
+          <Route path="/library/my-library" component={MyLibrary} exact />
 
           <Route path="/about" component={AboutPage} exact />
           <Route path="/profile" component={ProfilePage} exact />

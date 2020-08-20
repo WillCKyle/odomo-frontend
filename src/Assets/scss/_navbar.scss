@@ -69,13 +69,14 @@ footer {
 
   .selected {
     opacity: 1;
-    stroke: $goldActive;
+    stroke-width: 2;
     @include transition(.4s ease-in-out);
     text-decoration: none;
   }
 
   .selected svg {
     stroke: $goldActive;
+    stroke-width: 2;
     @include transition(.4s ease-in-out);
     text-decoration: none;
   }
