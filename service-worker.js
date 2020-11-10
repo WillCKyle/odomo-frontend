@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/odomo-frontend/precache-manifest.71de9d94492c6deb7f6713580fb4bf13.js"
+  "/odomo-frontend/precache-manifest.6d044c1cba3292de0a7103a7b80f931a.js"
 );
 
 self.addEventListener('message', (event) => {

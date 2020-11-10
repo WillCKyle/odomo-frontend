@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b904bd7e10d84ee9858a446d5bc07b6b",
+    "revision": "0b13dc19028f52e455bc970b830599a0",
     "url": "/odomo-frontend/index.html"
   },
   {
-    "revision": "58ecfb9fa8a7bbf6938a",
+    "revision": "81254096e02d782a65c3",
     "url": "/odomo-frontend/static/css/main.6c80f5de.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/odomo-frontend/static/js/2.a826ef64.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "58ecfb9fa8a7bbf6938a",
-    "url": "/odomo-frontend/static/js/main.2be19840.chunk.js"
+    "revision": "81254096e02d782a65c3",
+    "url": "/odomo-frontend/static/js/main.98b90e71.chunk.js"
   },
   {
     "revision": "27836ae2925a731a9291",
