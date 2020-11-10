@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/odomo-frontend/static/css/main.6c80f5de.chunk.css",
-    "main.js": "/odomo-frontend/static/js/main.98b90e71.chunk.js",
-    "main.js.map": "/odomo-frontend/static/js/main.98b90e71.chunk.js.map",
+    "main.js": "/odomo-frontend/static/js/main.2be19840.chunk.js",
+    "main.js.map": "/odomo-frontend/static/js/main.2be19840.chunk.js.map",
     "runtime-main.js": "/odomo-frontend/static/js/runtime-main.991adc24.js",
     "runtime-main.js.map": "/odomo-frontend/static/js/runtime-main.991adc24.js.map",
     "static/js/2.a826ef64.chunk.js": "/odomo-frontend/static/js/2.a826ef64.chunk.js",
     "static/js/2.a826ef64.chunk.js.map": "/odomo-frontend/static/js/2.a826ef64.chunk.js.map",
     "index.html": "/odomo-frontend/index.html",
-    "precache-manifest.6d044c1cba3292de0a7103a7b80f931a.js": "/odomo-frontend/precache-manifest.6d044c1cba3292de0a7103a7b80f931a.js",
+    "precache-manifest.71de9d94492c6deb7f6713580fb4bf13.js": "/odomo-frontend/precache-manifest.71de9d94492c6deb7f6713580fb4bf13.js",
     "service-worker.js": "/odomo-frontend/service-worker.js",
     "static/css/main.6c80f5de.chunk.css.map": "/odomo-frontend/static/css/main.6c80f5de.chunk.css.map",
     "static/js/2.a826ef64.chunk.js.LICENSE.txt": "/odomo-frontend/static/js/2.a826ef64.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.991adc24.js",
     "static/js/2.a826ef64.chunk.js",
     "static/css/main.6c80f5de.chunk.css",
-    "static/js/main.98b90e71.chunk.js"
+    "static/js/main.2be19840.chunk.js"
   ]
 }
