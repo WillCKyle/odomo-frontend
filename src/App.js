@@ -50,8 +50,6 @@ class App extends Component {
       <div className="App">
 
         <Switch>
-          <Route path="/" component={LandingPage} exact />
-          <Route path="" component={LandingPage} exact />
           <Route path="/home" component={HomePage} exact />
           <Route path="/connect" component={ConnectPage} exact />
           <Route path="/consensus" component={ConsensusPage} exact />
