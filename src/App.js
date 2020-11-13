@@ -80,7 +80,7 @@ class App extends Component {
           <Route path="/issue/:name" component={IssuePage} exact />
           <Route path="/question/:name" component={QuestionPage} exact />
 
-          <Route component={NotFoundPage} />
+          <Route component={LandingPage} />
         </Switch>
 
         <NavBar />
