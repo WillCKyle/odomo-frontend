@@ -1,37 +1,40 @@
 import React, { Component } from 'react';
-import {
-  Link,
-  NavLink
-} from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import { BottomNavigation, BottomNavigationAction, SvgIcon } from '@mui/material';
+import { ReactComponent as Act } from '../Assets/svg/Act.svg';
+import { ReactComponent as Add } from '../Assets/svg/Add.svg';
+import { ReactComponent as You } from '../Assets/svg/You.svg';
+
 
 class NavBar extends Component {
   render() {
     return (
-      <footer>
+      <BottomNavigation>
+        <BottomNavigationAction component={Link} to="/act" icon={<SvgIcon><Act /></SvgIcon>}/>
+      </BottomNavigation>
+      // <footer>
 
-      <nav>
-        <ul className="navbar">
-          <li className="item">
-            <NavLink activeClassName="selected" to="/home"><svg className="navbar-icon" alt="Home" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.61111 20.0755V27.5H0.5V12.8608L14 0.673605L27.5 12.8608V27.5H18.3889V20.0755H17.8889C18.3889 20.0755 18.3889 20.0752 18.3889 20.0749L18.3889 20.0743L18.3889 20.0727L18.3889 20.0686L18.3887 20.0564C18.3885 20.0465 18.3882 20.0331 18.3876 20.0164C18.3865 19.9831 18.3842 19.9368 18.3799 19.8791C18.3712 19.764 18.3542 19.6031 18.3206 19.4113C18.2538 19.0301 18.1193 18.5147 17.8453 17.9937C17.5701 17.4703 17.1508 16.9353 16.516 16.5329C15.8792 16.1292 15.0547 15.8774 14 15.8774C12.9453 15.8774 12.1208 16.1292 11.484 16.5329C10.8492 16.9353 10.4299 17.4703 10.1547 17.9937C9.88073 18.5147 9.7462 19.0301 9.67938 19.4113C9.64578 19.6031 9.62876 19.764 9.62011 19.8791C9.61578 19.9368 9.61353 19.9831 9.61237 20.0164C9.61178 20.0331 9.61147 20.0465 9.6113 20.0564L9.61114 20.0686L9.61112 20.0727L9.61111 20.0743L9.61111 20.0749C9.61111 20.0752 9.61111 20.0755 10.1111 20.0755H9.61111Z"/></svg></NavLink>
-          </li>
-          <li className="item">
-            <NavLink activeClassName="selected" to="/action"><svg className="navbar-icon" alt="Action" width="21" height="30" viewBox="0 0 21 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.04323 8.74487L8.3356 10.158L10.5 11.5712M10.5 11.5712L13.3788 13.4554M10.5 11.5712L15.2127 5.44752M13.3788 13.4554L16.1297 15.5M13.3788 13.4554L18.4221 8.74487M16.1297 15.5L18.518 13L17.9636 18.6369L16.1297 20.9922L15.6712 29H12.5H6.5017L6.96018 20.5211L1 11.5712L5.12628 4.50542L13.3788 7.74724L12.0034 9.61767L15.2127 5.44752M16.1297 15.5C17.1995 14.5579 19.4307 11.948 19.7975 11.5712C20.1643 11.1943 19.9503 10.472 19.7975 10.158L18.4221 8.74487M18.4221 8.74487L15.2127 5.44752M15.2127 5.44752L12.0034 3M12.0034 3C12.4619 3.47105 10.4446 1.58491 9.71103 1.20807C8.97747 0.831233 8.48843 1.05106 8.3356 1.20807L6.04323 4.88226L9.71103 6.30643L12.0034 3Z"/></svg></NavLink>
-          </li>
-          <li className="item">
-            <NavLink activeClassName="selected" to="/consensus"><svg className="navbar-icon" alt="Consensus" width="19" height="28" viewBox="0 0 19 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.40031 17.3864L4.39729 17.3843C2.04797 15.7238 0.5 12.9221 0.5 9.73913C0.5 4.6192 4.49775 0.5 9.3913 0.5C14.2848 0.5 18.2826 4.6192 18.2826 9.73913C18.2826 12.9141 16.7425 15.7095 14.4032 17.3716C12.7012 18.3645 12.0432 19.8389 11.8737 20.8043H6.90922C6.77718 20.095 6.38691 19.4362 5.96986 18.9032C5.44743 18.2356 4.82438 17.6909 4.40031 17.3864Z"/><rect x="6.17398" y="24.6522" width="6.43478" height="0.608696" rx="0.304348" /><rect x="6.17398" y="22.3043" width="6.43478" height="0.608696" rx="0.304348" /><rect x="7.3478" y="27.0869" width="4.08696" height="0.608696" rx="0.304348" /></svg></NavLink>
-          </li>
-          <li className="item">
-            <NavLink activeClassName="selected" to="/connect"><svg className="navbar-icon" alt="Connect" width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.39643 28.5V18.6481C6.39643 15.3914 8.34252 13.2653 11.1745 11.9074C10.0204 11.0868 9.15991 9.212 8.77314 7.84133M6.39643 28.5H23.6036M6.39643 28.5H1V21.2407C1 18.7982 1.40332 16.6843 3.52732 15.6659C2.3322 14.8162 1.55693 13.4491 1.55693 11.9074C1.55693 9.33008 3.72365 7.24074 6.39643 7.24074C7.26021 7.24074 8.07113 7.45895 8.77314 7.84133M23.6036 28.5V18.6481C23.6036 15.3914 21.6575 13.2653 18.8255 11.9074C19.9796 11.0868 20.8401 9.212 21.2269 7.84133M23.6036 28.5H29V21.2407C29 18.7982 28.5967 16.6843 26.4727 15.6659C27.6678 14.8162 28.4431 13.4491 28.4431 11.9074C28.4431 9.33008 26.2764 7.24074 23.6036 7.24074C22.7398 7.24074 21.9289 7.45895 21.2269 7.84133M8.77314 7.84133C8.62591 7.31954 8.54732 7.28899 8.54732 6.72222C8.54732 3.28578 11.4363 0.5 15 0.5C18.5637 0.5 21.4527 3.28578 21.4527 6.72222C21.4527 7.28899 21.3741 7.31954 21.2269 7.84133" /></svg></NavLink>
-          </li>
+      // <nav>
+      //   <ul className="navbar">
 
-          <li className="item">
-            <NavLink activeClassName="selected" to="/library"><svg className="navbar-icon" alt="Art" width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.26181" y="1.26181" width="0.52362" height="27.3072" rx="0.26181" /><rect x="10.7342" y="1.26181" width="0.52362" height="27.3072" rx="0.26181" /><rect x="0.290608" y="0.164303" width="0.465896" height="28.4578" rx="0.232948" transform="matrix(0.967061 -0.254544 0.280464 0.959864 18.9503 1.2406)" /></svg></NavLink>
-          </li>
-        </ul>
-      </nav>
+      //     <li className="item">
+      //       <NavLink activeClassName="selected" to="/action"><svg className="navbar-icon" alt="Action" width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.04323 8.74487L8.3356 10.158L10.5 11.5712M10.5 11.5712L13.3788 13.4554M10.5 11.5712L15.2127 5.44752M13.3788 13.4554L16.1297 15.5M13.3788 13.4554L18.4221 8.74487M16.1297 15.5L18.518 13L17.9636 18.6369L16.1297 20.9922L15.6712 29H12.5H6.5017L6.96018 20.5211L1 11.5712L5.12628 4.50542L13.3788 7.74724L12.0034 9.61767L15.2127 5.44752M16.1297 15.5C17.1995 14.5579 19.4307 11.948 19.7975 11.5712C20.1643 11.1943 19.9503 10.472 19.7975 10.158L18.4221 8.74487M18.4221 8.74487L15.2127 5.44752M15.2127 5.44752L12.0034 3M12.0034 3C12.4619 3.47105 10.4446 1.58491 9.71103 1.20807C8.97747 0.831233 8.48843 1.05106 8.3356 1.20807L6.04323 4.88226L9.71103 6.30643L12.0034 3Z"/></svg></NavLink>
+      //     </li>
+
+      //     <li className="item">
+      //       <NavLink activeClassName="selected" to="/add"><svg className="navbar-icon" alt="Add" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="12.0385" y1="0.5" x2="12.0385" y2="24.5" stroke-linecap="round"/><line x1="0.5" y1="12.9615" x2="24.5" y2="12.9615" stroke-linecap="round"/></svg></NavLink>
+      //     </li>
+
+      //     <li className="item">
+      //       <NavLink activeClassName="selected" to="/you"><svg className="navbar-icon" alt="You" width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.37449 1C5.31987 1 2.84362 3.38781 2.84362 6.33333C2.84362 6.81913 2.91098 6.84532 3.03718 7.29257C3.36869 8.46743 4.10624 10.0744 5.09549 10.7778C2.66807 11.9417 1 13.764 1 16.5556V25H2.84615C7.16405 25 9.58492 25 13.9028 25H15.749V16.5556C15.749 13.764 14.0809 11.9417 11.6535 10.7778C12.6427 10.0744 13.3803 8.46743 13.7118 7.29257C13.838 6.84532 13.9053 6.81913 13.9053 6.33333C13.9053 3.38781 11.4291 1 8.37449 1Z" /></svg></NavLink>
+      //     </li>
+
+      //   </ul>
+      // </nav>
 
 
-      </footer>
+      // </footer>
+
     );
   }
 }

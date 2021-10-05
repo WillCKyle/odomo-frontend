@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from '@mui/material';
 
 const LandingPage = () => (
 
@@ -10,6 +11,7 @@ const LandingPage = () => (
     a central hub for events and fundraising campaigns,
     and a consensus-building method of deliberation that prioritizes the leadership of BIPOC.
   </p>
+  <Button variant="filled">Hello</Button>
   </>
 
 );
