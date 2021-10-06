@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './Assets/Theme.jsx';
+import CssBaseline from '@mui/material/CssBaseline';
 
 // components
 import NavBar from './components/navbar';
@@ -32,6 +33,7 @@ class App extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
+      <CssBaseline />
       <Router>
       <div className="App">
 
