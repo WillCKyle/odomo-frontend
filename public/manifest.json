@@ -1,15 +1,15 @@
 {
   "short_name": "Odomo",
-  "name": "Odomo - An App for the Revolution",
+  "name": "Odomo - Community Unity",
   "icons": [
       {
-          "src": "/Candy.png",
+          "src": "/S.png",
           "sizes": "512x512",
           "type": "image/png"
       }
   ],
-  "theme_color": "#000",
-  "background_color": "#000",
+  "theme_color": "#242424",
+  "background_color": "#242424",
   "start_url": "https://www.odomo.org",
   "display": "standalone"
 }
