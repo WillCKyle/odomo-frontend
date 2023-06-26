@@ -2,7 +2,7 @@
 
 // dependencies
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var minifyCSS = require('gulp-clean-css');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
@@ -44,7 +44,7 @@ function compile_scss() {
 //    gulp.watch(SCSS_SRC, ['compile_scss']);
 //}));
 
-function watch_scss() {
+async function watch_scss() {
     gulp.watch(SCSS_SRC, compile_scss);
 }
 

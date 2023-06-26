@@ -4,7 +4,10 @@ var baseTheme = {
 	palette: {
 		type: 'dark',
 		background: {
-			default: "#fff",
+			default: "#000",
+		},
+		text: {
+			primary: "#fff"
 		},
 	},
 	typography: {
